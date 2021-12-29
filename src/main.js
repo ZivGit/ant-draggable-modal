@@ -1,8 +1,9 @@
-import Vue from 'vue'
+import Vue from 'vue';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
-import App from './App.vue'
-import { mixin } from './mixin'
+import App from './App.vue';
+import './directive';
+import { mixin } from './mixin';
 
 Vue.mixin(mixin)
 
