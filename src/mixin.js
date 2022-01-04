@@ -10,7 +10,7 @@ export const mixin = {
             handler(val) {
                 if (val) {
                     setTimeout(() => {
-                        this.handler()
+                        this.visiblehookHandler()
                     }, 10)
                 }
             },
@@ -18,7 +18,7 @@ export const mixin = {
         },
     },
     methods: {
-        handler() {
+        visiblehookHandler() {
             this.$nextTick(function() {
                 switch (this.$options.name) {
                     case 'AModal': {
